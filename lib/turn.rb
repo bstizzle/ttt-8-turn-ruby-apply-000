@@ -43,3 +43,8 @@ end
 def move(board, position, xo = "X")
   board[position] = xo
 end
+
+#turn input method
+def turn(board)
+  puts "Please enter 1-9."
+end
