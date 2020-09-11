@@ -34,10 +34,12 @@ def position_taken?(board, index)
   end
 end
 
+#convert input of 1-9 to index 0-8
 def input_to_index(position)
   position.to_i - 1
 end
 
+#get board state, input, and character
 def move(board, position, xo = "X")
   board[position] = xo
 end
