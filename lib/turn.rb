@@ -54,6 +54,6 @@ def turn(board)
     display_board(board)
   else
     puts "Invalid move, please enter a different number:"
-    position = gets.strip
+    turn(board)
   end
 end
