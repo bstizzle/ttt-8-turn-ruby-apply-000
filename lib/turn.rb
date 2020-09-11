@@ -49,9 +49,11 @@ def turn(board)
   puts "Please enter 1-9:"
   position = gets.strip
   index = input_to_index(position)
+  #if the move is good, edit and print the board
   if valid_move?(board, index)
     move(board, index, xo = "X")
     display_board(board)
+  #if the move is bad, let the player know and loop the turn method
   else
     puts "Invalid move, please enter a different number:"
     turn(board)
