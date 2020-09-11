@@ -51,6 +51,7 @@ def turn(board)
   index = input_to_index(position)
   if valid_move?(board, index)
     move(board, index, xo = "X")
+    display_board(board)
   else
     puts "Invalid move, please enter a different number:"
     position = gets.strip
